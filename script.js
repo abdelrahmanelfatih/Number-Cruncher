@@ -29,7 +29,7 @@ button.addEventListener("click", function() {
     }
     else{
         result.textContent = "The number " + value + " is Odd";
-        result.style.color = "red";
+        result.style.color = "orange";
     }
 
     numbersList.textContent = "Numbers: " + numbers.join(", ");

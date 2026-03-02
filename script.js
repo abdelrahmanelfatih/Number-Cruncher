@@ -12,7 +12,13 @@ button.addEventListener("click", function() {
         result.textContent = "Please enter a number first.";
         return;
     }
+    
     let value = Number(input.value);
+
+    if(!Number.isInteger(value)){
+        result.textContent = "Please enter an Integer";
+        return;
+    }
     numbers.push(value);
 
     if(value % 2 === 0){
